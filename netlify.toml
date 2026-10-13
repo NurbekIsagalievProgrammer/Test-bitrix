@@ -1,0 +1,19 @@
+[build]
+  command = "echo no build"
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/result"
+  to = "/.netlify/functions/result"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/result"
+  status = 200
+  force = true
