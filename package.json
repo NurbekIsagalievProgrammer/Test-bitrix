@@ -1,0 +1,14 @@
+{
+  "name": "orders-sync",
+  "version": "1.0.0",
+  "description": "Mini orders synchronizer: fetch, normalize phones, deduplicate",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
